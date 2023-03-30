@@ -1,12 +1,19 @@
-/* import Banner from '../components/Banner'
+import React from "react";
+import NavBar from "../components/NavBar.jsx";
+import Banner from "../components/Banner.jsx";
+import HousingGrid from "../components/HousingGrid.jsx";
+import Main from "../components/Main.jsx";
+import "../Home.css";
 
-function App() {
-    return <Banner />
-}
-
-export default App */
 function Home() {
-    return <div>Page d'accueil 🏡</div>
+    return (
+        <div>
+            <NavBar />
+            <Main>
+                <Banner />
+                <HousingGrid />
+            </Main>
+        </div>
+    );
   }
-  
   export default Home
