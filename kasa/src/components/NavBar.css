@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     padding: 0.2rem;
-    color: var (--red);
+    color: #ff6060;
     font-weight: 700;
     gap: 2rem;
 }

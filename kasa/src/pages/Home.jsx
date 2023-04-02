@@ -3,6 +3,8 @@ import NavBar from "../components/NavBar.jsx";
 import Banner from "../components/Banner.jsx";
 import HousingGrid from "../components/HousingGrid.jsx";
 import Main from "../components/Main.jsx";
+import Footer from "../components/Footer.jsx";
+
 import "../Home.css";
 
 function Home() {
@@ -13,6 +15,7 @@ function Home() {
                 <Banner />
                 <HousingGrid />
             </Main>
+            <Footer />
         </div>
     );
   }

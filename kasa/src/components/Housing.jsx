@@ -4,9 +4,9 @@ import "./Housing.css";
 function Housing() {
   return (
     <div className="housing">
-      Titre de la location
+      <div className="housing__subtitle">Titre de la location</div>
     </div>
-  )
+  );
 }
 
 export default Housing
