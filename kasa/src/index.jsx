@@ -6,7 +6,8 @@ import {createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Home />
+        element: <Home />,
+        errorElement: <h1>404 not found</h1>
     },
     {
         path: "/Housing",
@@ -15,10 +16,6 @@ const router = createBrowserRouter([
     {
         path: "/About",
         element: <h1>A propos /</h1>
-    },
-    {
-        path: "/404",
-        element: <h1>404</h1>
     }
 ])
 

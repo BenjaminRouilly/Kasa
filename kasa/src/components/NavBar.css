@@ -7,6 +7,15 @@
     gap: 2rem;
 }
 
+.navbar a {
+    text-decoration: none;
+    color: #ff6060;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
 .navbar__logo {
     margin-right: auto;
 }
