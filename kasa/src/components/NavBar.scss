@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    color: #ff6060;
+    font-weight: 700;
+    gap: 2rem;
+    /* Le > indique que la règle ne s'appliquera qu'aux enfants directs, pas aux petits enfant */
+    & > *:first-child {
+    margin-right: auto;
+    }
+    & a {
+        text-decoration: none;
+        color: #ff6060;
+        &.active, &:hover {
+            text-decoration: underline;
+        }
+    }
+}

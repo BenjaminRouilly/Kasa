@@ -1,5 +1,5 @@
 import React from 'react'
-import "./HousingGrid.css";
+import "./HousingGrid.scss";
 import Housing from "./Housing.jsx";
 
 function HousingGrid() {
