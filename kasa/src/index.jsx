@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Main from "./components/Main";
 import About from "./pages/About";
 import HousingPage from "./pages/HousingPage";
+import Error404 from "./pages/Error404";
 
 /* L'élément HeaderFooterLayout va avoir une NavBar, un Footer et va injecter 
 un outlet au milieu qui sera l'élément qu'on passe dans ses enfants (home, housing etc..)*/
@@ -23,7 +24,7 @@ const HeaderFooterLayout = () => {
 const router = createBrowserRouter([
     {     
         element: <HeaderFooterLayout />,
-        errorElement: <h1>404 not found</h1>,
+        errorElement: <Error404 />,
         children: [
             {
                 path: "/",
