@@ -5,6 +5,8 @@ import {createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
+import About from "./pages/About";
+import HousingPage from "./pages/HousingPage";
 
 /* L'élément HeaderFooterLayout va avoir une NavBar, un Footer et va injecter 
 un outlet au milieu qui sera l'élément qu'on passe dans ses enfants (home, housing etc..)*/
@@ -29,11 +31,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/Housing",
-                element: <h1>Appartement</h1>
+                element: <HousingPage />
             },
             {
                 path: "/about",
-                element: <h1>A propos</h1>
+                element: <About />
             }
         ],
 

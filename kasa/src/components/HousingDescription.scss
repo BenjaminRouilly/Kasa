@@ -1,0 +1,20 @@
+.housing__description {
+    p {
+        margin-block: 0;
+    }
+    .description__header {
+        background-color: #ff6060;
+        color: white;
+        padding: 0.2em 1em;
+        border-radius: 0.7rem;
+    }
+    .description__content {
+        background-color: rgba(0,0,0, 0.119);
+        color: #ff6060;
+        padding: 1rem;
+        border-radius: 0.7rem;
+        position: relative;
+        top: -0.3rem;
+        z-index: -1;
+    }
+}
