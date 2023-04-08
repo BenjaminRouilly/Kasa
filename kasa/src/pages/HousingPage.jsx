@@ -18,7 +18,7 @@ function HousingPage() {
                 <span>☆</span>
             </div>
         </div>
-        <HousingDescription />
+        <HousingDescription content="siuhnbvusihbikusdbiodiubsd3"/>
         <HousingDescription />
 
     </div>

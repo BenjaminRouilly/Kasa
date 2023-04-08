@@ -1,14 +1,19 @@
 import React from 'react'
 import "./HousingGrid.scss";
 import Housing from "./Housing.jsx";
+import records from "../datas/logements.json"
 
 function HousingGrid() {
+
   return (
-    <div className="grid">
-        <Housing />
-        <Housing />
-        <Housing />
-        <Housing />
+    <div className='housings'>
+          {
+              records.map( record => {
+                  return (
+                      <Housing key={record.id} id={record.id} cover={record.cover} title={record.title} />
+                  )
+              })
+          }
     </div>
   )
 }

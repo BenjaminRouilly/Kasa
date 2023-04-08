@@ -2,14 +2,18 @@ import React from 'react'
 import "./Housing.scss";
 import { Link } from "react-router-dom";
 
-function Housing() {
+function Housing({ id, cover, title }) {
+
   return (
-    <Link to="/housing">
-      <div className="housing">
-        <div className="housing__subtitle">Titre de la location</div>
+      <div className='housing'>
+          <Link to={{ 
+              pathname: "/Housing",
+              search: "?_id="+id }}>
+              <img src={cover} alt={title} />
+              <h3>{title}</h3>
+          </Link>
       </div>
-    </Link>
-  );
+  )
 }
 
 export default Housing

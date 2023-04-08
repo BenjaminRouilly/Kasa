@@ -14,7 +14,7 @@ function HousingDescription(props) {
             <p className="description__header">
                 <span>Description</span>
                 <i className="fas-sharp fa-solid fa-chevron-down" onClick={collapse}></i>
-                </p>
+            </p>
             {isContentVisible && <p className="description__content">{props.content}</p>}
         </div>
     );
