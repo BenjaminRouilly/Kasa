@@ -6,7 +6,7 @@ import records from "../datas/logements.json"
 function HousingGrid() {
 
   return (
-    <div className='housings'>
+    <div className='grid'>
           {
               records.map( record => {
                   return (
