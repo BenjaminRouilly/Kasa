@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useSearchParams } from 'react-router-dom';
 import "./HousingPage.scss";
 import HousingDescription from "../components/HousingDescription";
+
 
 function HousingPage() {
   return (
