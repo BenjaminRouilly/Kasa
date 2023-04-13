@@ -20,24 +20,24 @@ function HousingPage() {
           <div>
             <Carrousel slides={record.pictures} />
           </div>
-          <div className="ficheLogement">
-            <div className="div-description">
-              <h1>{record.title}</h1>
-              <h4>{record.location}</h4>
-              <div className="div-tags">
+          <div className="housing-page">
+            <div className="housing-page__title">
+              <h1 className='housing-title'>{record.title}</h1>
+              <h4 className='housing-location'>{record.location}</h4>
+              <div className="tags">
                 {record.tags.map((element, index) => {
                   return (
-                    <p className="tags" key={'tags-' + index.toString()}>
+                    <p className="tag" key={'tags-' + index.toString()}>
                       {element}
                     </p>
                   )
                 })}
               </div>
             </div>
-            <div className="bloc-stars">
-              <div className="div-host">
-                <p>{record.host.name}</p>
-                <img src={record.host.picture} alt={record.title} />
+            <div className="housing-page__subtitle">
+              <div className="host">
+                <p className='host-name'>{record.host.name}</p>
+                <img src={record.host.picture} className='host-picture' alt={record.title} />
               </div>
 
               <div className="stars">
@@ -45,7 +45,7 @@ function HousingPage() {
               </div>
             </div>
           </div>
-          <div className="collapesCollection">
+          <div className="collapse-collection collapse-group">
             <div>
               <Collapse
                 title="Description"

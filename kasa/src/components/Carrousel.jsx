@@ -9,11 +9,11 @@ const [position, setPosition] = useState(0);
       <div className="chevrons">{
       (slides.length > 1) && (
         <>
-                <i className='chevronSlider  fa-solid fa-chevron-left' onClick={() => {position===0 ? setPosition(slides.length-1): setPosition(position-1); }}></i>
+                <i className='chevronCarrousel  fa-solid fa-chevron-left' onClick={() => {position===0 ? setPosition(slides.length-1): setPosition(position-1); }}></i>
 
-                    <span className='slider-Counter'> {[currentLog + 1]} / {slides.length}</span>
+                    <span className='carrouselCounter'> {[currentLog + 1]} / {slides.length}</span>
 
-                <i className='chevronSlider  fa-solid fa-chevron-right' onClick={() => {position===slides.length-1 ?setPosition(0): setPosition(position+1); }}></i>
+                <i className='chevronCarrousel  fa-solid fa-chevron-right' onClick={() => {position===slides.length-1 ?setPosition(0): setPosition(position+1); }}></i>
     </>)}
       </div>
   </div> 
