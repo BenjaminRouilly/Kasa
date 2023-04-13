@@ -1,19 +1,23 @@
-import React from 'react'
-import records from "../datas/logements.json"
+import {useState} from 'react'
 
-function Carrousel({ id, position }) {
-    const sheet = records.find(element => element.id === id)
-    if (sheet !== undefined) {
-        let max = sheet.pictures.length
-        if (position > max) position = 1
-        if (position === 0) position = max
+const Carrousel = ({slides}) => {
+const [position, setPosition] = useState(0);
+  const currentLog = position;
+  return (
+    <div className="carrousel">
+      <img src={slides[position]} className="slideShow" alt="logo" />
+      <div className="chevrons">{
+      (slides.length > 1) && (
+        <>
+                <i className='chevronSlider  fa-solid fa-chevron-left' onClick={() => {position===0 ? setPosition(slides.length-1): setPosition(position-1); }}></i>
 
-        return (
-            <div className='carrousel-housing'>
-                <img src={sheet.pictures[position]} alt={sheet.title} />
-            </div>
-        )
-    }
-}
+                    <span className='slider-Counter'> {[currentLog + 1]} / {slides.length}</span>
 
-export default Carrousel
+                <i className='chevronSlider  fa-solid fa-chevron-right' onClick={() => {position===slides.length-1 ?setPosition(0): setPosition(position+1); }}></i>
+    </>)}
+      </div>
+  </div> 
+  );
+};
+
+export default Carrousel;

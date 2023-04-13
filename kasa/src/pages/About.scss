@@ -1,3 +1,64 @@
-.about__container {
+/* .about__container {
     padding-inline: 3rem;
+} */
+.bannerAbout {
+    position: relative;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 32px;
+
+    img {
+        width: 100vw;
+        height: 223px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: left center;
+        object-position: left center;
+        border-radius: 25px;
+        background: black;
+        mix-blend-mode: darken;
+    }
+}
+.collapesCollection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 32px;
+
+    .collapsible {
+        font-weight: 500;
+        font-size: 24px;
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ff6060;
+        color: #ffffff;
+        cursor: pointer;
+        padding: 18px;
+        border: none;
+        outline: none;
+        height: 47px;
+        width: 80%;
+        border-radius: 5px;
+    }
+
+    .content {
+        padding: 32px 0;
+
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+        color: #ff6060;
+        width: 80%;
+        border-radius: 0 5px;
+        line-height: 35px;
+        font-weight: 400;
+        font-size: 24px;
+        p {
+            padding-left: 32px;
+            padding-right: 16px;
+        }
+    }
 }
