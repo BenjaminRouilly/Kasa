@@ -9,7 +9,7 @@ const Collapse = ({ title,content }) => {
     const className = {
         header: `collapsible`,
         myicon: `fa-sharp fa-solid fa-chevron-up${isContentVisible ? '' : ' icon-rotate' }`,
-        content:`content${isContentVisible ? ' ' : ' not-display'}`,
+        content:`content${isContentVisible ? ' ' : ' not-displayed'}`,
       };
     return (
         <>  
