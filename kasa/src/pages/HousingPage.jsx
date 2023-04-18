@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import './HousingPage.scss'
-import Collapse from '../components/Collapse'
+import CollapsibleTemplate from '../components/Collapse'
 import records from '../datas/logements.json'
 import Banner from '../components/Banner'
 import Carrousel from '../components/Carrousel'
@@ -22,8 +22,8 @@ function HousingPage() {
           </div>
           <div className="housing-page">
             <div className="housing-page__title">
-              <h1 className='housing-title'>{record.title}</h1>
-              <h4 className='housing-location'>{record.location}</h4>
+              <h1 className="housing-title">{record.title}</h1>
+              <h4 className="housing-location">{record.location}</h4>
               <div className="tags">
                 {record.tags.map((element, index) => {
                   return (
@@ -36,8 +36,12 @@ function HousingPage() {
             </div>
             <div className="housing-page__subtitle">
               <div className="host">
-                <p className='host-name'>{record.host.name}</p>
-                <img src={record.host.picture} className='host-picture' alt={record.title} />
+                <p className="host-name">{record.host.name}</p>
+                <img
+                  src={record.host.picture}
+                  className="host-picture"
+                  alt={record.title}
+                />
               </div>
 
               <div className="stars">
@@ -45,34 +49,21 @@ function HousingPage() {
               </div>
             </div>
           </div>
-          <div className="collapse-collection collapse-group">
-            <div>
-              <Collapse
-                title="Description"
-                content={record.tags.map((element, index) => {
-                  return (
-                    <p className="tags" key={'tags-' + index.toString()}>
-                      {element}
-                    </p>
-                  )
-                })}
-              />
-            </div>
-            <div>
-              <Collapse
-                title="Equipements"
-                content={record.equipments.map((element, index) => {
-                  return (
-                    <p
-                      className="equipement-content"
-                      key={'equip-' + index.toString()}
-                    >
-                      {element}
-                    </p>
-                  )
-                })}
-              />
-            </div>
+          <div className="collapsibles-container">
+            <CollapsibleTemplate label="Description">
+              <p className="description_text"> {record.description} </p>
+            </CollapsibleTemplate>
+            <CollapsibleTemplate label="Equipements">
+              <div>
+                {' '}
+                {record.equipments.map((equip, i) => (
+                  <p className="description_text" key={i}>
+                    {' '}
+                    {equip}{' '}
+                  </p>
+                ))}
+              </div>
+            </CollapsibleTemplate>
           </div>
         </div>
       </div>
