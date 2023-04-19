@@ -2,13 +2,43 @@
     color: #ff6060;
     text-align: center;
     h1 {
-        font-size: 10rem;
-        margin-bottom: 0.5em;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 288px;
+        height: 263px;
+        color: #ff6060;
+        margin-bottom: 66px;
     }
     h2 {
-        font-size: 26px;
+        width: 100%;
+        text-align: center;
+        color: #ff6060;
+        font-size: 36px;
+        margin-bottom: 142px;
+        font-style: normal;
+        font-weight: 500;
     }
     a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
         color: #ff6060;
+        margin: 42px;
+        text-decoration: underline;
+        list-style-type: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .error-page {
+        h1 {
+            font-size: 170px;
+        }
+        h2{
+            font-size: 18px;
+        }
+        a {
+            font-size: 14px;
+        }
     }
 }

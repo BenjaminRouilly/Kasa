@@ -2,8 +2,10 @@
     display: flex;
     align-items: center;
     padding: 0.2rem;
+    margin: 40px 100px 0px;
     color: #ff6060;
-    font-weight: 700;
+    font-weight: 500;
+    line-height: 142.6%;
     gap: 2rem;
     /* Le > indique que la règle ne s'appliquera qu'aux enfants directs, pas aux petits enfant */
     & > *:first-child {
@@ -11,6 +13,7 @@
     }
     & a {
         text-decoration: none;
+        font-size: 24px;
         color: #ff6060;
         &.active, &:hover {
             text-decoration: underline;
@@ -20,4 +23,9 @@
     width: 145px;
 }
 
+}
+.navbar img {
+    width: auto;
+    height: 54.45px;
+    margin: auto 0px;
 }
