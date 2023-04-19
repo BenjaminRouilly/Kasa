@@ -1,5 +1,5 @@
 import React from 'react'
-import './Housing.scss'
+import '../styles/Housing.scss'
 import { Link } from 'react-router-dom'
 
 function Housing({ id, cover, title }) {

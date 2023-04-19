@@ -1,7 +1,7 @@
 import React from 'react'
 import BannerAbout from '../assets/imgapropos.png'
 import CollapsibleTemplate from '../components/Collapse'
-import"./About.scss";
+import"../styles/About.scss";
 
 function About() {
 
@@ -10,7 +10,7 @@ function About() {
           <div className="bannerAbout">
                   <img src={BannerAbout} className="App-logo" alt="logo" />
           </div>
-          <div className="testcolonne">
+          <div className="columns">
             <CollapsibleTemplate label="Fiabilité" fontSize={24}>
                <p className="description_text_about">
                   Chez Kasa, nous sommes fiers d'offrir un service de

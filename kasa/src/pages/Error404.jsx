@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import "./Error404.scss";
+import "../styles/Error404.scss";
 import NavBar from '../components/NavBar';
 import Main from '../components/Main';
 

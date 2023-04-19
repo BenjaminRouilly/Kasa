@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import './HousingPage.scss'
+import '../styles/HousingPage.scss'
 import CollapsibleTemplate from '../components/Collapse'
 import records from '../datas/logements.json'
 import Banner from '../components/Banner'

@@ -1,6 +1,6 @@
 // Wrapper pour les children des éléments, ici pour leur mettre du padding
 import React from 'react'
-import "./Main.scss";
+import "../styles/Main.scss";
 
 function Main(props) {
     const { children } = props;
