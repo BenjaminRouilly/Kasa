@@ -1,16 +1,16 @@
-import React, { useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
-import '../styles/HousingPage.scss'
-import CollapsibleTemplate from '../components/Collapse'
-import records from '../datas/logements.json'
-import Banner from '../components/Banner'
-import Carrousel from '../components/Carrousel'
-import Stars from '../components/Stars'
+import React from 'react';
+import { useLocation, Navigate } from 'react-router-dom';
+import '../styles/HousingPage.scss';
+import CollapsibleTemplate from '../components/Collapse';
+import records from '../datas/logements.json';
+import Banner from '../components/Banner';
+import Carrousel from '../components/Carrousel';
+import Stars from '../components/Stars';
 
 function HousingPage() {
-  const [searchParams] = useSearchParams()
-  const [query] = useState(searchParams.get('_id'))
-  const record = records.find((element) => element.id === query)
+  const location = useLocation();
+  const id = location.pathname.split('/')[2];
+  const record = records.find((element) => element.id === id);
 
   if (record !== undefined) {
     return (
@@ -30,7 +30,7 @@ function HousingPage() {
                     <p className="tag" key={'tags-' + index.toString()}>
                       {element}
                     </p>
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -67,8 +67,11 @@ function HousingPage() {
           </div>
         </div>
       </div>
-    )
+    );
+  } else {
+    // Redirection vers la page Error404
+    return <Navigate to="/Error404" replace={true} />;
   }
 }
 
-export default HousingPage
+export default HousingPage;
