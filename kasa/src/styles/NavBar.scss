@@ -8,23 +8,29 @@
     font-weight: 500;
     line-height: 142.6%;
     gap: 2rem;
+
     /* Le > indique que la règle ne s'appliquera qu'aux enfants directs, pas aux petits enfant */
-    & > *:first-child {
-    margin-right: auto;
+    &>*:first-child {
+        margin-right: auto;
     }
+
     & a {
         text-decoration: none;
         font-size: 24px;
         color: #ff6060;
-        &.active, &:hover {
+
+        &.active,
+        &:hover {
             text-decoration: underline;
         }
     }
+
     .__logo {
-    width: 145px;
-}
+        width: 145px;
+    }
 
 }
+
 .navbar img {
     width: auto;
     height: 54.45px;

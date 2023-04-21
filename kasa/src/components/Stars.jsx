@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const Stars = ({ note }) => {
-  /* Hook useState pour stocker la note dans fullStars  */
+  /* Hook useState pour stocker la note  en tant qu'entier dans fullStars  */
   const [fullStars] = useState(Math.floor(note))
   /* Le nombre d'étoiles vides sera le résultat de 5 - la note */
   const emptyStars = 5 - fullStars

@@ -1,16 +1,18 @@
-import React from 'react';
-import { useLocation, Navigate } from 'react-router-dom';
-import '../styles/HousingPage.scss';
-import CollapsibleTemplate from '../components/Collapse';
-import records from '../datas/logements.json';
-import Banner from '../components/Banner';
-import Carrousel from '../components/Carrousel';
-import Stars from '../components/Stars';
+import React from 'react'
+import { useLocation, Navigate } from 'react-router-dom'
+import '../styles/HousingPage.scss'
+import CollapsibleTemplate from '../components/Collapse'
+import records from '../datas/logements.json'
+import Banner from '../components/Banner'
+import Carrousel from '../components/Carrousel'
+import Stars from '../components/Stars'
 
 function HousingPage() {
-  const location = useLocation();
-  const id = location.pathname.split('/')[2];
-  const record = records.find((element) => element.id === id);
+  /* Méthode useLocation pour récupérer l'URL courante et extraire l'ID du logement à partir de l'URL */
+  const location = useLocation()
+  const id = location.pathname.split('/')[2]
+  /* Méthode find() pour rechercher l'enregistrement de logement correspondant à cet ID dans le fichier JSON */
+  const record = records.find((element) => element.id === id)
 
   if (record !== undefined) {
     return (
@@ -30,7 +32,7 @@ function HousingPage() {
                     <p className="tag" key={'tags-' + index.toString()}>
                       {element}
                     </p>
-                  );
+                  )
                 })}
               </div>
             </div>
@@ -67,11 +69,13 @@ function HousingPage() {
           </div>
         </div>
       </div>
-    );
+    )
   } else {
-    // Redirection vers la page Error404
-    return <Navigate to="/Error404" replace={true} />;
+    /* Navigate est utilisé pour naviguer vers la page Error404 en utilisant la propriété "to" qui spécifie l'URL de destination. 
+    La propriété "replace" est également utilisée pour remplacer l'URL courante plutôt que d'ajouter une nouvelle entrée à l'historique de navigation. 
+    Cela permet de masquer l'URL d'origine de l'utilisateur et de lui donner l'impression qu'il se trouve sur une page différente. */
+    return <Navigate to="/Error404" replace={true} />
   }
 }
 
-export default HousingPage;
+export default HousingPage

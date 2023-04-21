@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 function CollapsibleTemplate(props) {
+  /* constante "isOpen" initialisée avec useState(false), le collapsible est fermé par défaut */
   const [isOpen, setIsOpen] = useState(false)
   const { label, children, fontSize } = props
 

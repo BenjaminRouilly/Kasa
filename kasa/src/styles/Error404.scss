@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 .error-page {
     color: #ff6060;
     text-align: center;
     font-family: 'Montserrat';
+
     h1 {
         font-style: normal;
         font-weight: 700;
@@ -11,6 +13,7 @@
         color: #ff6060;
         margin-bottom: 66px;
     }
+
     h2 {
         width: 100%;
         text-align: center;
@@ -20,6 +23,7 @@
         font-style: normal;
         font-weight: 500;
     }
+
     a {
         font-style: normal;
         font-weight: 500;
@@ -36,9 +40,11 @@
         h1 {
             font-size: 170px;
         }
-        h2{
+
+        h2 {
             font-size: 18px;
         }
+
         a {
             font-size: 14px;
         }
