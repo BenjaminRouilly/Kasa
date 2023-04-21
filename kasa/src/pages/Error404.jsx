@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "../styles/Error404.scss";
 import NavBar from '../components/NavBar';
 import Main from '../components/Main';
+import Footer from '../components/Footer';
 
 function Error404() {
   return (
@@ -15,6 +16,7 @@ function Error404() {
                 <Link to="/">Retournez sur la page d'accueil</Link>
             </div>
         </Main>
+        <Footer/>
       </>
   )
 }
