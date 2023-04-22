@@ -133,7 +133,7 @@
   .housing-title {
     color: #ff6060;
     font-size: 32px;
-    line-height: 16px;
+    line-height: 36px;
     display: flex;
     align-items: flex-end;
     font-weight: 500;
@@ -307,5 +307,87 @@
         list-style: none;
       }
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carrousel img {
+    width: 100%;
+  }
+
+  .housing-page {
+    flex-direction: column;
+
+    .housing-title {
+      font-size: 18px;
+    }
+
+    .housing-location {
+      font-size: 14px;
+    }
+
+    .housing-page__subtitle {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      width: 100%;
+      margin-top: 17px;
+      margin-bottom: 17px;
+      justify-content: space-between;
+
+      .host {
+        align-items: center;
+
+        .host-name {
+          font-size: 12px;
+        }
+
+        .host-picture {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+
+    .tags {
+      .tag {
+        font-size: 10px;
+      }
+    }
+
+    .fa-star {
+      font-size: 15px;
+    }
+  }
+
+  .collapsible-button-label {
+    font-size: 13px;
+  }
+
+  .collapsibles-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .description_text {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .carrousel {
+    .chevrons {
+      .carrouselCounter {
+        bottom: -75px;
+      }
+    }
+
+  }
+
+  .carrousel img {
+    height: 235px;
+    width: 335px;
   }
 }

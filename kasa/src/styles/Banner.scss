@@ -12,13 +12,45 @@
     color: white;
     margin-bottom: 2rem;
     max-width: 100%;
-    font-family: 'Montserrat';
 }
 
 .banner::before {
     position: absolute;
-    border-radius: 2rem;
     content: "";
     inset: 0;
-    opacity: 0.5;
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 25px;
+}
+
+.banner h2 {
+    position: relative;
+    color: #FFF;
+	font-family: 'Montserrat';
+	font-size: 48px;
+	font-weight: 500;
+}
+@media (max-width: 970px) {
+    .banner h2 {
+        font-size: 1.5rem;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        margin-top: 0px;
+        height: 111px;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner h2 {
+        font-size: 1rem;
+    }
+
+    .banner {
+        height: 255px;
+    }
 }

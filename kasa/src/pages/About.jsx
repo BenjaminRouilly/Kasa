@@ -10,7 +10,7 @@ function About() {
         <img src={BannerAbout} className="App-logo" alt="logo" />
       </div>
       <div className="columns">
-        <CollapsibleTemplate label="Fiabilité" fontSize={24}>
+        <CollapsibleTemplate className="collapsible-button-label" label="Fiabilité">
           <p className="description_text_about">
             Chez Kasa, nous sommes fiers d'offrir un service de réservation
             d'hôtels fiable et de qualité supérieure. Nous nous engageons à
@@ -19,7 +19,7 @@ function About() {
           </p>
         </CollapsibleTemplate>
 
-        <CollapsibleTemplate label="Respect" fontSize={24}>
+        <CollapsibleTemplate className="collapsible-button-label" label="Respect">
           <p className="description_text_about">
             Nous croyons que chaque client mérite un service respectueux et
             attentif. C'est pourquoi nous nous efforçons de créer une expérience
@@ -28,7 +28,7 @@ function About() {
             de haute qualité à chaque étape.
           </p>
         </CollapsibleTemplate>
-        <CollapsibleTemplate label="Service" fontSize={24}>
+        <CollapsibleTemplate className="collapsible-button-label" label="Service">
           <p className="description_text_about">
             Notre objectif est de fournir un service exceptionnel à chaque
             client, à chaque fois. Nous nous engageons à offrir une assistance
@@ -38,10 +38,7 @@ function About() {
           </p>
         </CollapsibleTemplate>
         <CollapsibleTemplate
-          label="Responsabilité"
-          fontSize={24}
-          className="testsalut"
-        >
+          className="collapsible-button-label" label="Responsabilité">
           <p className="description_text_about">
             Nous sommes conscients de notre responsabilité envers nos clients et
             envers l'environnement. Nous nous engageons à fournir des

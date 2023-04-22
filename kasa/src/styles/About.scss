@@ -25,6 +25,10 @@
   margin: auto;
 }
 
+.collapsible-button-label {
+  font-size: 24px;
+}
+
 .description_text_about {
   font-family: 'Montserrat';
   font-style: normal;
@@ -36,4 +40,16 @@
   margin-right: 15px;
   margin-left: -2px;
   text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .collapsible {
+      .collapsible-button-label {
+    font-size: 13px;
+  }
+  .description_text_about {
+    font-size: 12px;
+  }
+  }
+
 }

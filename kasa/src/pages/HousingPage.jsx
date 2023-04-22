@@ -3,7 +3,6 @@ import { useLocation, Navigate } from 'react-router-dom'
 import '../styles/HousingPage.scss'
 import CollapsibleTemplate from '../components/Collapse'
 import records from '../datas/logements.json'
-import Banner from '../components/Banner'
 import Carrousel from '../components/Carrousel'
 import Stars from '../components/Stars'
 
@@ -18,7 +17,6 @@ function HousingPage() {
     return (
       <div>
         <div className="logement">
-          <Banner />
           <div>
             <Carrousel slides={record.pictures} />
           </div>

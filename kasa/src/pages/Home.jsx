@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../components/Banner.jsx'
 import HousingGrid from '../components/HousingGrid.jsx'
-import '../Home.css'
+import '../styles/Home.scss'
 
 function Home() {
   return (

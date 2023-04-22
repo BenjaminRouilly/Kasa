@@ -36,13 +36,23 @@
 }
 
 @media screen and (max-width: 768px) {
+    .main {
+        min-height: 43vh;
+    }
+    .footer {
+        margin: 0px 0px -12px;
+    }
     .error-page {
         h1 {
-            font-size: 170px;
+            font-size: 96px;
+            margin-bottom: 0px;
+            margin-top: 207px;
+            height: 100px;
         }
 
         h2 {
             font-size: 18px;
+            margin-bottom: 133px;
         }
 
         a {
