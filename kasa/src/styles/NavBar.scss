@@ -1,9 +1,11 @@
+@import 'abstract/variables';
+
 .navbar {
     display: flex;
     align-items: center;
     padding: 0.2rem;
     margin: 40px 100px 50px;
-    color: #ff6060;
+    color: $primary-color;
     font-family: 'Montserrat';
     font-weight: 500;
     line-height: 142.6%;
@@ -17,7 +19,7 @@
     & a {
         text-decoration: none;
         font-size: 24px;
-        color: #ff6060;
+        color: $primary-color;
 
         &.active,
         &:hover {

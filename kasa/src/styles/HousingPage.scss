@@ -1,3 +1,5 @@
+@import 'abstract/variables';
+
 .carrousel {
   position: relative;
   font-style: normal;
@@ -27,7 +29,7 @@
     .chevronCarrousel {
       padding-left: 16px;
       padding-right: 16px;
-      color: #ffffff;
+      color: $tertiary-color;
       z-index: 2;
       font-size: 48px;
       display: flex;
@@ -98,7 +100,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  color: #ff6060;
+  color: $primary-color;
   margin-top: -3px;
   margin-bottom: 4px;
   margin-right: 15px;
@@ -131,7 +133,7 @@
   justify-content: space-between;
 
   .housing-title {
-    color: #ff6060;
+    color: $primary-color;
     font-size: 32px;
     line-height: 36px;
     display: flex;
@@ -141,7 +143,7 @@
   }
 
   .housing-location {
-    color: #ff6060;
+    color: $primary-color;
     font-family: 'Montserrat';
     font-size: 18px;
     line-height: 20px;
@@ -156,10 +158,10 @@
     padding-left: 0;
 
     .tag {
-      color: #ffffff;
+      color: $tertiary-color;
       width: 150px;
       height: 25px;
-      background-color: #ff6060;
+      background-color: $primary-color;
       border-radius: 32px;
       display: flex;
       align-items: center;
@@ -183,7 +185,7 @@
       gap: 16px;
 
       .host-name {
-        color: #ff6060;
+        color: $primary-color;
         font-family: 'Montserrat';
         font-size: 18px;
         font-weight: 500;
@@ -194,7 +196,7 @@
       }
 
       .host-picture {
-        border: 1px solid #e3e3e3;
+        border: 1px solid $secondary-color;
         border-radius: 50px;
         width: 64px;
         height: 64px;
@@ -209,11 +211,11 @@
 
       .fa-star {
         font-weight: 700;
-        color: #e3e3e3;
+        color: $secondary-color;
       }
 
       :hover {
-        color: #ff6060;
+        color: $primary-color;
       }
     }
   }
@@ -232,8 +234,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ff6060;
-    color: #ffffff;
+    background-color: $primary-color;
+    color: $tertiary-color;
     cursor: pointer;
     padding: 18px;
     border: none;
@@ -247,7 +249,7 @@
     padding: 32px 0;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
-    color: #ff6060;
+    color: $primary-color;
     width: 80%;
     border-radius: 0 5px;
     line-height: 35px;
@@ -267,7 +269,7 @@
   justify-content: space-between;
   align-items: center;
   height: 52px;
-  background: #ff6060;
+  background: $primary-color;
   border-radius: 10px;
   font-family: 'Montserrat';
   font-style: normal;
